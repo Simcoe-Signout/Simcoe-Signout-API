@@ -17,8 +17,8 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            backend/
-            backend/captain-definition
+            /
+            captain-definition
           outPath: deploy.tar
 
       - uses: caprover/deploy-from-github@main
