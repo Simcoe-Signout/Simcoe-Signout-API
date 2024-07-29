@@ -2,12 +2,14 @@ name: Build and Deploy Production
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   deploy-backend:
     name: Build and Deploy Backend
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - uses: actions/checkout@v3
