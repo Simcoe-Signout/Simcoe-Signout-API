@@ -9,7 +9,6 @@ jobs:
   deploy-backend:
     name: Build and Deploy Backend
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/staging'
 
     steps:
       - uses: actions/checkout@v3
