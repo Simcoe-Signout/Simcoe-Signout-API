@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy-backend:
-    name: Build and Deploy Backend
+    name: Build and Deploy Backend to Caprover
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/staging'
 
